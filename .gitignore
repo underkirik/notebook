@@ -11,8 +11,8 @@ target/
 *.iws
 *.iml
 *.ipr
-#*.src/resources
-#!.src/resources.default-contacts.txt
+/src/main/resources/
+!/src/main/resources.default-contacts.txt
 
 ### Eclipse ###
 .apt_generated

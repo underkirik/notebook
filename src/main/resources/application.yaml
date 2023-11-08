@@ -1,0 +1,6 @@
+spring:
+  profiles:
+    #default, init
+    active: init
+app:
+  save_path: src/main/resources/
