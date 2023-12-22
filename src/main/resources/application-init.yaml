@@ -1,3 +1,0 @@
-app:
-  save_path: src/main/resources/
-  init-contact-file-name: default-contacts.txt

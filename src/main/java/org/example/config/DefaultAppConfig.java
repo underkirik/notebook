@@ -2,13 +2,12 @@ package org.example.config;
 
 import org.example.DefaultNotebook;
 import org.example.Notebook;
-import org.example.YamlPropertySourceFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.*;
 
 @Configuration
-@PropertySource(value = "classpath:application.yaml", factory = YamlPropertySourceFactory.class)
+@PropertySource(value = "classpath:application.properties")
 @Profile("default")
-@ComponentScan("org.example")
 public class DefaultAppConfig {
 
     @Bean

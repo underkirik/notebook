@@ -1,14 +1,17 @@
 package org.example;
 
 public interface Notebook {
-    void init();
 
-    void save();
+  void init();
 
-    void add(Contact contact);
+  void save();
 
-    void show();
+  void add(Contact contact);
 
-    void delete(String email);
+  void show();
+
+  void delete(String email);
+
+  boolean isExistInNotebook(String email);
 
 }
