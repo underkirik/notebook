@@ -35,7 +35,7 @@ public class DefaultNotebook implements Notebook {
   public void save() {
     try {
       if (fileToSave == null) {
-        fileToSave = new File(pathToSave + contactUtils.generateFileNameToSave());
+        fileToSave = new File(pathToSave + contactUtils.generateFileNameToSave() + "_contacts");
       }
       if (!fileToSave.exists()) {
         fileToSave.createNewFile();
@@ -44,11 +44,13 @@ public class DefaultNotebook implements Notebook {
       BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
       contacts.forEach(contact -> {
         try {
-          bufferedWriter.write(contact.getContactString());
+          bufferedWriter.write(contact.getContactString() + "\n");
         } catch (IOException e) {
           throw new RuntimeException(e);
         }
       });
+      bufferedWriter.close();
+      fileWriter.close();
     } catch (Exception e) {
       e.printStackTrace();
       System.out.println("Error in save contacts in file, this contacts");

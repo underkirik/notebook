@@ -8,10 +8,9 @@ target/
 *.iml
 *.ipr
 /.idea/
-/src/main/resources/*_contacts
+/src/main/resources/
 !/src/main/resources/*.properties
-!/src/main/resources/*.yaml
-!/src/main/resources/*.xml
+!/src/main/resources/*.yml
 !/src/main/resources.default-contacts.txt
 
 ### Eclipse ###
