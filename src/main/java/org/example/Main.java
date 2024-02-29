@@ -2,9 +2,6 @@ package org.example;
 
 import java.util.Scanner;
 import org.example.config.AppConfig;
-import org.example.config.DefaultAppConfig;
-import org.example.config.InitAppConfig;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
